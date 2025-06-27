@@ -28,7 +28,7 @@ body {
 
 .name {
   max-width: 80%;
-  color: rgb(246, 248, 163);
+  color: rgb(76, 161, 110);
   font-size: 6rem;
   font-weight: 200;
   text-align: center;
@@ -105,6 +105,30 @@ h2 {
   font-size: 1.5rem;
 }
 
+#resume {
+  display: inline-block;
+  margin: 1rem auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(76, 161, 110);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: rgb(76, 161, 110) 2px dashed;
+  transition: background-color 0.3s ease;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+
+#resume:hover {
+  color: #000;
+  transform: scale(1.2);
+}
+
+
 /* experience */
 a {
   color: rgb(69, 56, 56);
@@ -123,6 +147,12 @@ a {
   padding: 1rem;
   margin: 0.5rem;
   border: rgb(102, 129, 102) 2px solid;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.column:hover {
+     transform: scale(1.1);
 }
 
 /* skills section  */
@@ -145,6 +175,12 @@ a {
   padding: 1rem 1rem;
   border-radius: 5px;
   text-align: left;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+#skills li:hover {
+     transform: scale(1.1);
 }
 
 
@@ -169,6 +205,12 @@ a {
   display: flex;
   align-items: center;
   text-align: center;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.icon-li:hover {
+     transform: scale(1.1);
 }
 
 /* forms */
