@@ -1,0 +1,739 @@
+/* Layout */
+body {
+  background-color: #e0f7ea;
+  color: rgb(69, 56, 56);
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+/* -------------------header ----------------------*/
+/* desktop view 
+            yellow text
+            no border 
+            yellow nav bar*/
+.name-and-pic {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  margin: 4rem auto 2rem;
+  padding: 1rem;
+  width: 80%;
+}
+
+.mypic {
+  max-width: 15%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.name {
+  max-width: 80%;
+  color: rgb(246, 248, 163);
+  font-size: 6rem;
+  font-weight: 200;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+  border: 2px solid #817e7e;
+  margin: 1rem;
+  padding: 3rem;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  /* letter outline */
+}
+
+/* navigation menu  */
+.navmenu {
+  background-color: rgb(225, 205, 100);
+  padding: 0;
+  margin: 0;
+  top: 0;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.navmenu a {
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navmenu a:hover,
+.navmenu a:focus {
+  color: black;
+}
+/* navigation menu  */
+
+/* ----------------------header-------------------------- */
+
+/* --------------------sections ------------------------- */
+/* desptop view */
+main {
+  margin: 2rem auto;
+  width: 80%;
+  font-size: 1rem;
+}
+
+section {
+  margin: 1rem auto;
+  padding: 1rem 2rem;
+  border: 2px solid rgb(110, 182, 16);
+  border-radius: 25px;
+  text-align: center;
+  
+}
+
+h2 {
+  font-size: 1.5rem;
+  background-color: rgb(76, 161, 110);
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* about */
+#about p {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+/* experience */
+a {
+  color: rgb(69, 56, 56);
+}
+
+.columns {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-between;
+  text-align: left;
+  gap: 1rem;
+}
+
+.column {
+  flex: 1;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: rgb(102, 129, 102) 2px solid;
+}
+
+/* skills section  */
+ #skills ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  list-style: none;
+  font-size: 2rem;
+  gap:1rem;
+  padding: 0;
+  margin: 1rem auto;
+ }
+
+#skills li {
+  width: 90%;
+  background-color: lightgrey;
+  font-size: 1.5rem;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+  text-align: left;
+}
+
+
+
+/* connect section */
+#connect ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+.icon-pic {
+  width: 2rem;
+  height: 2rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.icon-li {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* forms */
+#leave_message h2 {
+  margin-bottom: 30px;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+}
+form input,
+form textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+form input {
+  width: 50%;
+  height: 40px;
+}
+textarea {
+  width: 80%;
+  height: 150px;
+  font-size: 1.5rem;
+}
+form button {
+  padding: 10px 20px;
+  margin: 10px auto;
+  font-size: 1rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: rgb(76, 161, 110);
+}
+
+/* message  */
+#messages ul {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1.5rem;
+}
+
+#messages li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.message-content {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex: 1;
+}
+
+/* hide message section if there is no message*/
+#messages {
+  display: none;
+}
+
+#messages li button {
+  margin-left: 20px;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+/* projects */
+/* .project-container {
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+}
+
+.projects-box {
+  display: flex;
+  justify-content: space-around;
+}
+
+#projects ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+#projects a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3rem 0.5rem;
+  border-radius: 5px;
+}
+
+#projects a:hover,
+#projects a:focus {
+  color: lightslategray;
+}  */
+
+.project-container {
+  display: flex;
+  justify-content: space-around;
+  /* background-color: #fffbe0; */
+  padding: 2rem;
+  gap: 2rem;
+
+}
+
+.project-box {
+  /* flex: 1 1 400px; */
+  /* background-color: #fdf6e3; */
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+.github-box {
+  flex: 0 0 30%;
+}
+
+/* Live project box = 70% */
+.live-project-box {
+  flex: 0 0 65%;
+}
+
+.project-box h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-box ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.project-box li {
+  margin-bottom: 0.8rem;
+}
+
+.project-box a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.project-box a:hover {
+  color: #999;
+}
+
+.live-project {
+  margin-bottom: 1.5rem;
+}
+
+.live-project img {
+  width: 30%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Live project layout: image + button in one row */
+.live-project-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+/* Image inside the link */
+.live-project-link img {
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.live-project-link img:hover {
+  transform: scale(1.05);
+}
+
+/* View Live Button Style */
+.view-live-button {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.view-live-button:hover {
+  background-color: #666;
+}
+
+
+
+/* ------------------desktop view done----------------- */
+
+/* ----------------phone view---------------------*/
+/*  green nav bar */
+@media (max-width: 600px) {
+  .navmenu a {
+    padding: 12px;
+    font-size: 0.8rem;
+  }
+  .navmenu a:hover,
+  .navmenu a:focus {
+    color: black;
+    text-decoration: none;
+  }
+  .navmenu {
+    background-color: rgb(121, 169, 98);
+    font-weight: bolder;
+  }
+}
+
+/* green border 
+  green text  */
+@media (max-width: 600px) {
+  .name-and-pic {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-top: none;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .mypic {
+    display: none;
+  }
+  .name {
+    max-width: 90%;
+    font-size: 2rem;
+    padding: 1rem;
+    color: green;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    width: 90%;
+  }
+
+  section {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  #about p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}
+
+/* experience flex */
+@media (max-width: 600px) {
+  .columns {
+    display: flex;
+    flex-direction: column;
+
+  }
+  .column {
+    width: 80%;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+  }
+}
+
+/* skills flex */
+@media (max-width: 600px) {
+  #skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #skills li {
+    padding: 0.2rem 0.2rem;
+    border-radius: 5px;
+    width: 90%;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
+   
+}
+
+/* connects */
+/* @media (max-width: 600px) {
+  #connect p {
+    font-size: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+} */
+
+@media (max-width: 600px) {
+  #connect p,
+  #connect ul {
+    font-size: 1rem;
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  #connect ul {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; /* optional: adds spacing between stacked items */
+  }
+}
+
+/* forms */
+@media (max-width: 600px) {
+  form input,
+  form textarea {
+    font-size: 2rem;
+    width: 80%;
+  }
+  form input {
+    height: 30px;
+  }
+  textarea {
+    height: 200px;
+  }
+  form button {
+    font-size: 1.5rem;
+  }
+
+  /* messages */
+  #messages li {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .message-content {
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+  }
+  #messages li button {
+    padding: 5px 10px;
+    margin: 10px auto;
+  }
+}
+/* projecs */
+/* @media (max-width: 600px) {
+  #projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 0;
+    margin: 1rem auto;
+  }
+
+  #projects ul li {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 90%;
+  }
+
+  #projects a {
+    font-size: 2rem;
+  }
+} */
+
+@media (max-width: 600px) {
+   .project-container{
+    flex-direction: column;
+  }
+    .github-box,
+  .live-project-box {
+    flex: 1 1 100%;
+  }
+  .live-project-link {
+    flex-direction: column;
+    align-items:center;
+    margin: 0, auto;
+    padding: 0;
+    gap:0.2rem;
+  }
+
+  .live-project-link img {
+    width: 100%;
+     margin: 0, auto;
+    padding: 0;
+  }
+
+  .view-live-button {
+    margin: 0 auto;
+  }
+}
+
+/* ---------------phone view done-------------- */
+
+/* ---------------tablet view--------------------- */
+
+/* pink nav bar */
+@media (min-width: 601px) and (max-width: 850px) {
+  .navmenu a {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
+  .navmenu a:hover,
+  .navmenu a:focus {
+    color: rgb(55, 63, 52);
+    text-decoration: none;
+  }
+  .navmenu {
+    background-color: rgb(220, 174, 174);
+    font-weight: bolder;
+  }
+}
+
+/* pink border 
+  pink text*/
+@media (min-width: 601px) and (max-width: 850px) {
+  .name-and-pic {
+    align-items: center;
+    padding: 1rem;
+    margin: 3rem auto 1rem auto;
+    width: 75%;
+  }
+  .mypic {
+    max-width: 25%;
+    margin-bottom: 1rem;
+  }
+  .name {
+    max-width: 90%;
+    font-size: 4rem;
+    padding: 1.5rem;
+    color: lightcoral;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 850px) {
+  main {
+    width: 80%;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  #about p {
+    font-size: 2rem;
+  }
+
+  .columns {
+    display: flex;
+    flex-direction: column;
+  }
+  .column {
+    width: 80%;
+    margin: 0.5rem auto;
+    font-size: 2rem;
+  }
+}
+
+/* skills flex */
+@media (min-width: 601px) and (max-width: 850px) {
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    gap: 1rem;
+  }
+
+  #skills li {
+    padding: 0.5rem 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+
+/* form and messages*/
+@media (min-width: 601px) and (max-width: 850px) {
+  form label {
+    font-size: 2rem;
+  }
+
+  form input {
+    width: 60%;
+    height: 40px;
+  }
+  form button {
+    font-size: 1.5rem;
+  }
+}
+/* projects */
+@media (min-width: 601px) and (max-width: 850px) {
+  #projects ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  #projects ul li {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    width: 80%;
+  }
+  #projects a {
+    font-size: 2rem;
+  }
+  #connect {
+    font-size: 2rem;
+  }
+
+    .project-container{
+    flex-direction: column;
+  }
+    .github-box,
+  .live-project-box {
+    flex: 1 1 100%;
+  }
+
+  .live-project-link {
+    flex-direction: column;
+    align-items:center;
+    margin: 0, auto;
+    padding: 0;
+    gap:0.2rem;
+  }
+
+  .live-project-link img {
+    width: 100%;
+     margin: 0, auto;
+    padding: 0;
+  }
+
+  .view-live-button {
+    margin: 0 auto;
+  }
+}
+/* ----------------------tablet view done------------------*/
